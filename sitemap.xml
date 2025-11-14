@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://hizolaw.github.io/</loc>
+    </url>
+    <url>
+        <loc>https://hizolaw.github.io/about/</loc>
+    </url>
+    <url>
+        <loc>https://hizolaw.github.io/archives/</loc>
+    </url>
+    <url>
+        <loc>https://hizolaw.github.io/categories/</loc>
+    </url>
+    <url>
+        <loc>https://hizolaw.github.io/categories/notes/</loc>
+    </url>
+    <url>
+        <loc>https://hizolaw.github.io/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://hizolaw.github.io/tags/</loc>
+    </url>
+    <url>
+        <loc>https://hizolaw.github.io/tags/zola/</loc>
+    </url>
+    <url>
+        <loc>https://hizolaw.github.io/zola-serve/</loc>
+        <lastmod>2025-11-13</lastmod>
+    </url>
+</urlset>

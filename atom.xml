@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+	<title>hzLuo</title>
+	<subtitle>hzLuo</subtitle>
+	<link href="https://hizolaw.github.io/atom.xml" rel="self" type="application/atom+xml"/>
+	<link href="https://hizolaw.github.io"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2025-11-13T00:00:00+00:00</updated>
+	<id>https://hizolaw.github.io/atom.xml</id>
+	<entry xml:lang="zh">
+		<title>zola 静态网页 + git pages 搭建</title>
+		<published>2025-11-13T00:00:00+00:00</published>
+		<updated>2025-11-13T00:00:00+00:00</updated>
+		<link href="https://hizolaw.github.io/zola-serve/"/>
+		<link rel="alternate" href="https://hizolaw.github.io/zola-serve/" type="text/html"/>
+		<id>https://hizolaw.github.io/zola-serve/</id>
+		<content type="html">&lt;h1 id=&quot;jian-jie&quot;&gt;简介&lt;a class=&quot;zola-anchor&quot; href=&quot;#jian-jie&quot; aria-label=&quot;Anchor link for: jian-jie&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;&#x2F;i&gt;&lt;&#x2F;a&gt; 
+&lt;&#x2F;h1&gt;
+&lt;p&gt;我们可以通过使用github ci，使用 zola 把笔记生成静态网页，发布在github pages上&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;zola-an-zhuang-he-shi-yong&quot;&gt;zola 安装和使用&lt;a class=&quot;zola-anchor&quot; href=&quot;#zola-an-zhuang-he-shi-yong&quot; aria-label=&quot;Anchor link for: zola-an-zhuang-he-shi-yong&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;&#x2F;i&gt;&lt;&#x2F;a&gt; 
+&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;an-zhuang&quot;&gt;安装&lt;a class=&quot;zola-anchor&quot; href=&quot;#an-zhuang&quot; aria-label=&quot;Anchor link for: an-zhuang&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;&#x2F;i&gt;&lt;&#x2F;a&gt; 
+&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;a rel=&quot;nofollow&quot; href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;documentation&#x2F;getting-started&#x2F;installation&#x2F;&quot;&gt;安装教程&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;chu-shi-hua-he-shi-yong&quot;&gt;初始化和使用&lt;a class=&quot;zola-anchor&quot; href=&quot;#chu-shi-hua-he-shi-yong&quot; aria-label=&quot;Anchor link for: chu-shi-hua-he-shi-yong&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;&#x2F;i&gt;&lt;&#x2F;a&gt; 
+&lt;&#x2F;h2&gt;
+&lt;p&gt;首先先初始化一下：&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#fdf6e3;color:#657b83;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#b58900;&quot;&gt;zola&lt;&#x2F;span&gt;&lt;span&gt; init blogname
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;就能得到以下的目录：&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#fdf6e3;color:#657b83;&quot;&gt;&lt;code&gt;&lt;span&gt;├── config.toml
+&lt;&#x2F;span&gt;&lt;span&gt;├── content
+&lt;&#x2F;span&gt;&lt;span&gt;├── sass
+&lt;&#x2F;span&gt;&lt;span&gt;├── static
+&lt;&#x2F;span&gt;&lt;span&gt;├── templates
+&lt;&#x2F;span&gt;&lt;span&gt;└── themes
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;然后参照官方的&lt;a rel=&quot;nofollow&quot; href=&quot;https:&#x2F;&#x2F;docs.github.com&#x2F;en&#x2F;authentication&#x2F;keeping-your-account-and-data-secure&#x2F;managing-your-personal-access-tokens&quot;&gt;说明&lt;&#x2F;a&gt;，就能去写笔记了：&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;yu-lan&quot;&gt;预览&lt;a class=&quot;zola-anchor&quot; href=&quot;#yu-lan&quot; aria-label=&quot;Anchor link for: yu-lan&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;&#x2F;i&gt;&lt;&#x2F;a&gt; 
+&lt;&#x2F;h2&gt;
+&lt;p&gt;最后，在当前目录子下，通过以下命令，就能在浏览器里预览：&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#fdf6e3;color:#657b83;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#b58900;&quot;&gt;zola&lt;&#x2F;span&gt;&lt;span&gt; serve
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h1 id=&quot;tong-guo-github-ci-ji-cheng-dao-github-pages&quot;&gt;通过 github ci 集成到 github pages&lt;a class=&quot;zola-anchor&quot; href=&quot;#tong-guo-github-ci-ji-cheng-dao-github-pages&quot; aria-label=&quot;Anchor link for: tong-guo-github-ci-ji-cheng-dao-github-pages&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;&#x2F;i&gt;&lt;&#x2F;a&gt; 
+&lt;&#x2F;h1&gt;
+&lt;p&gt;静态网页生成好了，接下来就是发布到托管的地方，我选择这种方式：&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;github private仓库存放markdown原始文档；&lt;&#x2F;li&gt;
+&lt;li&gt;private 的 ci 编译完成后，发布产物放到github pages仓库的展示分支中&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;这样有以下好处：&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;源代码和产物分开；&lt;&#x2F;li&gt;
+&lt;li&gt;无需github pro；&lt;&#x2F;li&gt;
+&lt;li&gt;后面如果需要发布到其他托管，新增一个 ci 就可以&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;简单看了下，原理其实很简单：&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;github pages通过&lt;a rel=&quot;nofollow&quot; href=&quot;https:&#x2F;&#x2F;docs.github.com&#x2F;en&#x2F;pages&#x2F;getting-started-with-github-pages&#x2F;configuring-a-publishing-source-for-your-github-pages-site&quot;&gt;配置&lt;&#x2F;a&gt;来设置仓库的某个分支某个文件夹是静态网页的放置目录；&lt;&#x2F;li&gt;
+&lt;li&gt;使用zola build来生成public文件夹&lt;&#x2F;li&gt;
+&lt;li&gt;把public文件夹里面的内容放到1. 所设置的分支的文件夹中即可；&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;我们可以利用github的ci action来完成这个三个动作，而且，已经有开源的docker image帮我们封装好这一切了，ref：&lt;a rel=&quot;nofollow&quot; href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;documentation&#x2F;deployment&#x2F;github-pages&#x2F;&quot;&gt;操作手册&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;但是，我们现在的需求其实和上面讲述的不一样，我们release的仓库和ci action所在位置不一样，需要配置一下仓库位置和另一个仓库的权限token，我们这里release后的仓库位置是hizolaw&#x2F;hizolaw.github.io，而权限token的获得，直接用&lt;a rel=&quot;nofollow&quot; href=&quot;https:&#x2F;&#x2F;docs.github.com&#x2F;en&#x2F;authentication&#x2F;keeping-your-account-and-data-secure&#x2F;managing-your-personal-access-tokens&quot;&gt;finedgrained TOKEN&lt;&#x2F;a&gt;即可。&lt;&#x2F;p&gt;
+&lt;p&gt;以下是最终的ci脚本：&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;yaml&quot; style=&quot;background-color:#fdf6e3;color:#657b83;&quot; class=&quot;language-yaml &quot;&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span style=&quot;color:#268bd2;&quot;&gt;name&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#2aa198;&quot;&gt;Deploy to GitHub Pages
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b58900;&quot;&gt;on&lt;&#x2F;span&gt;&lt;span&gt;:
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#268bd2;&quot;&gt;workflow_dispatch&lt;&#x2F;span&gt;&lt;span&gt;:
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#268bd2;&quot;&gt;push&lt;&#x2F;span&gt;&lt;span&gt;:
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#268bd2;&quot;&gt;branches&lt;&#x2F;span&gt;&lt;span&gt;: [ &lt;&#x2F;span&gt;&lt;span style=&quot;color:#2aa198;&quot;&gt;main &lt;&#x2F;span&gt;&lt;span&gt;]
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#268bd2;&quot;&gt;pull_request&lt;&#x2F;span&gt;&lt;span&gt;:
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#268bd2;&quot;&gt;branches&lt;&#x2F;span&gt;&lt;span&gt;: [ &lt;&#x2F;span&gt;&lt;span style=&quot;color:#2aa198;&quot;&gt;main &lt;&#x2F;span&gt;&lt;span&gt;]
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#268bd2;&quot;&gt;jobs&lt;&#x2F;span&gt;&lt;span&gt;:
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#268bd2;&quot;&gt;build&lt;&#x2F;span&gt;&lt;span&gt;:
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#268bd2;&quot;&gt;runs-on&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#2aa198;&quot;&gt;ubuntu-latest
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#268bd2;&quot;&gt;steps&lt;&#x2F;span&gt;&lt;span&gt;:
+&lt;&#x2F;span&gt;&lt;span&gt;      - &lt;&#x2F;span&gt;&lt;span style=&quot;color:#268bd2;&quot;&gt;name&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#2aa198;&quot;&gt;checkout
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#268bd2;&quot;&gt;uses&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#2aa198;&quot;&gt;actions&#x2F;checkout@v4
+&lt;&#x2F;span&gt;&lt;span&gt;      - &lt;&#x2F;span&gt;&lt;span style=&quot;color:#268bd2;&quot;&gt;name&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#2aa198;&quot;&gt;build_and_deploy
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#268bd2;&quot;&gt;uses&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#2aa198;&quot;&gt;shalzz&#x2F;zola-deploy-action@master
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#268bd2;&quot;&gt;env&lt;&#x2F;span&gt;&lt;span&gt;:
+&lt;&#x2F;span&gt;&lt;span&gt;          &lt;&#x2F;span&gt;&lt;span style=&quot;color:#93a1a1;&quot;&gt;# Target branch
+&lt;&#x2F;span&gt;&lt;span&gt;          &lt;&#x2F;span&gt;&lt;span style=&quot;color:#268bd2;&quot;&gt;PAGES_BRANCH&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#2aa198;&quot;&gt;gh-pages
+&lt;&#x2F;span&gt;&lt;span&gt;          &lt;&#x2F;span&gt;&lt;span style=&quot;color:#93a1a1;&quot;&gt;# Provide personal access token
+&lt;&#x2F;span&gt;&lt;span&gt;          &lt;&#x2F;span&gt;&lt;span style=&quot;color:#268bd2;&quot;&gt;TOKEN&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#2aa198;&quot;&gt;${{ secrets.GH_PAGES_TOKEN}}
+&lt;&#x2F;span&gt;&lt;span&gt;          &lt;&#x2F;span&gt;&lt;span style=&quot;color:#268bd2;&quot;&gt;REPOSITORY&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#2aa198;&quot;&gt;hizolaw&#x2F;hizolaw.github.io
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+</content>
+	</entry>
+</feed>

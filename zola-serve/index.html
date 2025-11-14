@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="referrer" content="no-referrer">
+
+        <!-- Enable responsiveness on mobile devices-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5" />
+
+        <title>zola 静态网页 + git pages 搭建 | hzLuo</title>
+<meta property="og:title" content="zola 静态网页 + git pages 搭建 | hzLuo" />
+<meta name="twitter:title" content="zola 静态网页 + git pages 搭建 | hzLuo" />
+
+        
+<meta name="description" content="简介   我们可以通过使用github ci，使用 zola 把笔记生成静态网页，发布在github pages上 zola 安装和使用   安装   安装教程 初始化和使用   首先先初始化一下： zola init blogname  就能得到以下的目录： ├── config.toml ├── content ├── sass ├── static ├── templates └── themes  然后参照官方的说明，就能去写笔记了： 预览   最后，在当前目录子下，通过以下命令，就能在浏览器里预览： zola serve  通过 github …">
+<meta property="og:description" content="简介   我们可以通过使用github ci，使用 zola 把笔记生成静态网页，发布在github pages上 zola 安装和使用   安装   安装教程 初始化和使用   首先先初始化一下： zola init blogname  就能得到以下的目录： ├── config.toml ├── content ├── sass ├── static ├── templates └── themes  然后参照官方的说明，就能去写笔记了： 预览   最后，在当前目录子下，通过以下命令，就能在浏览器里预览： zola serve  通过 github …">
+<meta name="twitter:description" content="简介   我们可以通过使用github ci，使用 zola 把笔记生成静态网页，发布在github pages上 zola 安装和使用   安装   安装教程 初始化和使用   首先先初始化一下： zola init blogname  就能得到以下的目录： ├── config.toml ├── content ├── sass ├── static ├── templates └── themes  然后参照官方的说明，就能去写笔记了： 预览   最后，在当前目录子下，通过以下命令，就能在浏览器里预览： zola serve  通过 github …">
+
+        <meta property="og:site_name" content="hzLuo" />
+        <meta property="og:url" content="https:&#x2F;&#x2F;hizolaw.github.io" />
+
+        <script src="https://hizolaw.github.io/js/instantpage.min.js" type="module" defer></script>
+
+        
+
+<link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://hizolaw.github.io/base.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link href="https://hizolaw.github.io/fontawesome/fontawesome.css" rel="stylesheet">
+        <link href="https://hizolaw.github.io/fontawesome/brands.css" rel="stylesheet">
+        <link href="https://hizolaw.github.io/fontawesome/solid.css" rel="stylesheet">
+<link rel="stylesheet" href="https://hizolaw.github.io/header.css" />
+<link rel="stylesheet" href="https://hizolaw.github.io/nav.css" />
+<link rel="stylesheet" href="https://hizolaw.github.io/page.css" />
+
+
+
+        <link rel='icon' type='image/x-icon' href="https://hizolaw.github.io/favicon.ico" />
+
+        <link rel="alternate" type="application/atom+xml" title="hzLuo" href="https://hizolaw.github.io/atom.xml">
+
+        <link rel="stylesheet" href="https://hizolaw.github.io/css/katex.min.css">
+        <script defer src="https://hizolaw.github.io/js/katex.min.js"></script>
+        <script defer src="https://hizolaw.github.io/js/mathtex-script-type.min.js"></script>
+
+        
+
+    </head>
+    <body>
+        <a href="#main" class="skip-link p-screen-reader-text">Skip to content</a>
+        
+<header class="l-header">
+    <h1 class="c-title p-title"><a href="https:&#x2F;&#x2F;hizolaw.github.io" class="p-title__link">hzLuo</a></h1>
+    <nav class="l-nav p-menu">
+            <div class="p-menu__pivot"><a href="https://hizolaw.github.io/about">About</a> • <a href="https://hizolaw.github.io/archives">Archives</a> • <a href="https://hizolaw.github.io/tags">Tags</a> • <a href="https://hizolaw.github.io/categories">Categories</a></div>
+        </nav>
+    
+</header>
+
+
+        <main id="main" class="l-main">
+            
+<article class="p-article">
+  <header>
+    <h1>zola 静态网页 + git pages 搭建
+</h1>
+    <div>
+      <div class="c-time">
+        <time datetime=" 2025-11-13">
+          2025-11-13
+        </time>
+        
+         - (3 min read)
+      </div>
+    </div>
+  </header>
+  
+  <section id="js-article" class="p-article__body">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+    <h1 id="jian-jie">简介<a class="zola-anchor" href="#jian-jie" aria-label="Anchor link for: jian-jie"><i class="fas fa-link"></i></a> 
+</h1>
+<p>我们可以通过使用github ci，使用 zola 把笔记生成静态网页，发布在github pages上</p>
+<h1 id="zola-an-zhuang-he-shi-yong">zola 安装和使用<a class="zola-anchor" href="#zola-an-zhuang-he-shi-yong" aria-label="Anchor link for: zola-an-zhuang-he-shi-yong"><i class="fas fa-link"></i></a> 
+</h1>
+<h2 id="an-zhuang">安装<a class="zola-anchor" href="#an-zhuang" aria-label="Anchor link for: an-zhuang"><i class="fas fa-link"></i></a> 
+</h2>
+<p><a rel="nofollow" href="https://www.getzola.org/documentation/getting-started/installation/">安装教程</a></p>
+<h2 id="chu-shi-hua-he-shi-yong">初始化和使用<a class="zola-anchor" href="#chu-shi-hua-he-shi-yong" aria-label="Anchor link for: chu-shi-hua-he-shi-yong"><i class="fas fa-link"></i></a> 
+</h2>
+<p>首先先初始化一下：</p>
+<pre data-lang="bash" style="background-color:#fdf6e3;color:#657b83;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#b58900;">zola</span><span> init blogname
+</span></code></pre>
+<p>就能得到以下的目录：</p>
+<pre style="background-color:#fdf6e3;color:#657b83;"><code><span>├── config.toml
+</span><span>├── content
+</span><span>├── sass
+</span><span>├── static
+</span><span>├── templates
+</span><span>└── themes
+</span></code></pre>
+<p>然后参照官方的<a rel="nofollow" href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens">说明</a>，就能去写笔记了：</p>
+<h2 id="yu-lan">预览<a class="zola-anchor" href="#yu-lan" aria-label="Anchor link for: yu-lan"><i class="fas fa-link"></i></a> 
+</h2>
+<p>最后，在当前目录子下，通过以下命令，就能在浏览器里预览：</p>
+<pre data-lang="bash" style="background-color:#fdf6e3;color:#657b83;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#b58900;">zola</span><span> serve
+</span></code></pre>
+<h1 id="tong-guo-github-ci-ji-cheng-dao-github-pages">通过 github ci 集成到 github pages<a class="zola-anchor" href="#tong-guo-github-ci-ji-cheng-dao-github-pages" aria-label="Anchor link for: tong-guo-github-ci-ji-cheng-dao-github-pages"><i class="fas fa-link"></i></a> 
+</h1>
+<p>静态网页生成好了，接下来就是发布到托管的地方，我选择这种方式：</p>
+<ol>
+<li>github private仓库存放markdown原始文档；</li>
+<li>private 的 ci 编译完成后，发布产物放到github pages仓库的展示分支中</li>
+</ol>
+<p>这样有以下好处：</p>
+<ol>
+<li>源代码和产物分开；</li>
+<li>无需github pro；</li>
+<li>后面如果需要发布到其他托管，新增一个 ci 就可以</li>
+</ol>
+<p>简单看了下，原理其实很简单：</p>
+<ol>
+<li>github pages通过<a rel="nofollow" href="https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site">配置</a>来设置仓库的某个分支某个文件夹是静态网页的放置目录；</li>
+<li>使用zola build来生成public文件夹</li>
+<li>把public文件夹里面的内容放到1. 所设置的分支的文件夹中即可；</li>
+</ol>
+<p>我们可以利用github的ci action来完成这个三个动作，而且，已经有开源的docker image帮我们封装好这一切了，ref：<a rel="nofollow" href="https://www.getzola.org/documentation/deployment/github-pages/">操作手册</a></p>
+<p>但是，我们现在的需求其实和上面讲述的不一样，我们release的仓库和ci action所在位置不一样，需要配置一下仓库位置和另一个仓库的权限token，我们这里release后的仓库位置是hizolaw/hizolaw.github.io，而权限token的获得，直接用<a rel="nofollow" href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens">finedgrained TOKEN</a>即可。</p>
+<p>以下是最终的ci脚本：</p>
+<pre data-lang="yaml" style="background-color:#fdf6e3;color:#657b83;" class="language-yaml "><code class="language-yaml" data-lang="yaml"><span style="color:#268bd2;">name</span><span>: </span><span style="color:#2aa198;">Deploy to GitHub Pages
+</span><span>
+</span><span style="color:#b58900;">on</span><span>:
+</span><span>  </span><span style="color:#268bd2;">workflow_dispatch</span><span>:
+</span><span>  </span><span style="color:#268bd2;">push</span><span>:
+</span><span>    </span><span style="color:#268bd2;">branches</span><span>: [ </span><span style="color:#2aa198;">main </span><span>]
+</span><span>  </span><span style="color:#268bd2;">pull_request</span><span>:
+</span><span>    </span><span style="color:#268bd2;">branches</span><span>: [ </span><span style="color:#2aa198;">main </span><span>]
+</span><span>
+</span><span style="color:#268bd2;">jobs</span><span>:
+</span><span>  </span><span style="color:#268bd2;">build</span><span>:
+</span><span>    </span><span style="color:#268bd2;">runs-on</span><span>: </span><span style="color:#2aa198;">ubuntu-latest
+</span><span>    </span><span style="color:#268bd2;">steps</span><span>:
+</span><span>      - </span><span style="color:#268bd2;">name</span><span>: </span><span style="color:#2aa198;">checkout
+</span><span>        </span><span style="color:#268bd2;">uses</span><span>: </span><span style="color:#2aa198;">actions/checkout@v4
+</span><span>      - </span><span style="color:#268bd2;">name</span><span>: </span><span style="color:#2aa198;">build_and_deploy
+</span><span>        </span><span style="color:#268bd2;">uses</span><span>: </span><span style="color:#2aa198;">shalzz/zola-deploy-action@master
+</span><span>        </span><span style="color:#268bd2;">env</span><span>:
+</span><span>          </span><span style="color:#93a1a1;"># Target branch
+</span><span>          </span><span style="color:#268bd2;">PAGES_BRANCH</span><span>: </span><span style="color:#2aa198;">gh-pages
+</span><span>          </span><span style="color:#93a1a1;"># Provide personal access token
+</span><span>          </span><span style="color:#268bd2;">TOKEN</span><span>: </span><span style="color:#2aa198;">${{ secrets.GH_PAGES_TOKEN}}
+</span><span>          </span><span style="color:#268bd2;">REPOSITORY</span><span>: </span><span style="color:#2aa198;">hizolaw/hizolaw.github.io
+</span></code></pre>
+
+  </section>
+  <footer>
+    <nav class="c-pagination p-pagination">
+      <div class="c-pagination__ctrl">
+        <div class="c-pagination__newer">
+          
+        </div>
+        <div class="c-pagination__older">
+          
+        </div>
+      </div>
+    </nav>
+  </footer>
+</article>
+            
+        </main>
+
+
+      <footer class="l-footer">
+          <p class="p-copyright">
+              
+          </p>
+      </footer>
+
+      
+    </body>
+</html>
+
